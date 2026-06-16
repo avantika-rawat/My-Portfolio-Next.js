@@ -1,9 +1,9 @@
 // components/Certificates.tsx
 "use client";
+import "swiper/css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
 
 const certificates = [
   { id: 1, src: "/Certificates/backend.ppg", title: "Certificate 1" },

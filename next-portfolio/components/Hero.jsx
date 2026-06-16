@@ -1,20 +1,26 @@
-import Blob from "./Blob";
+import BlobImage from "./Blob";
+import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6">
+    <div className="min-h-screen flex flex-col gap-20">
+    <Navbar/>
+    <section className="h-[80%] flex flex-col md:flex-row items-center justify-center gap-10 px-6">
+   
       
-      {/* <Blob /> */}
+      <BlobImage />
 
       <div className="max-w-xl text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl font-bold">
-          Hi, I’m <span className="text-blue-600">Avantika</span>
-        </h1>
+       <h1 className="text-6xl md:text-8xl font-extrabold leading-none tracking-[0.2em] scale-x-125 origin-left">
+  AVANTIKA <br />
+  RAWAT
+</h1>
         <p className="mt-4 text-gray-600">
           Full-Stack Web Developer building modern, scalable web apps.
         </p>
       </div>
 
     </section>
+    </div>
   );
 }

@@ -1,7 +1,11 @@
-import Image from "next/image";
-
 export default function BlobImage() {
-  return(
-    <h1>Blob</h1>
+  return (
+      <div className="blob">
+        <img
+          src="/hero-img.jpg"
+          className="w-full h-full object-cover grayscale"
+        />
+      </div>
+      
   );
 }
